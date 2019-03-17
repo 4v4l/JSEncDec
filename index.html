@@ -1,0 +1,82 @@
+<!--
+Copyright 2019 Alessio P. [4v4l]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/> 
+<title>JS enc/dec</title>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<style>
+body,html {
+    height: 100%;
+}
+
+#dropZoneEnc {
+	z-index: 1000;
+	border: 5px dashed #cccccc;
+	min-width: 49%;
+	height: 80px;
+	text-align: center;
+	margin-bottom: 20ex;
+}
+
+#dropZoneEnc.hover {
+    border: 5px dashed #7a7a7a;
+}
+
+#dropZoneDec{
+	z-index: 1000;
+	border: 5px dashed #cccccc;
+	min-width: 49%;
+	height: 80px;
+	text-align: center;
+}
+
+#dropZoneDec.hover {
+    border: 5px dashed #7a7a7a;
+}
+
+.pw_prompt {
+	z-index: 1000;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	padding: 15px;
+	width: 200px;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #ececec;
+}
+</style>
+
+<body>
+<div class="d-flex align-items-center flex-column justify-content-center h-100">
+    <div class="d-flex align-items-center justify-content-center" id="dropZoneEnc">
+      <h2 style="color: #ccc">Drop to ENCRYPT</h2>
+    </div>
+    <div class="d-flex align-items-center justify-content-center" id="dropZoneDec">
+      <h2 style="color: #ccc">Drop to DECRYPT</h2>
+    </div>
+</div>
+</body>
+<script src="./forge.js"></script>
+<script src="./JSEncDec.js"></script>
+</html>
